@@ -1,1 +1,46 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>2.27 Defining entity relations</title><link rel="stylesheet" type="text/css" href="/+static/base.FgwOs7Bvh5E6-lzR-xJuUQ.cache.css"/><link rel="stylesheet" type="text/css" href="/+static/doc.aizEIcp0qpW8JIXIrCB9UQ.cache.css"/><link rel="stylesheet" type="text/css" href="/+static/prettify/prettify.AOMOBqJIPcDq491E2ExAAw.cache.css"/><!-- default customHeadTagPart --></head><body class="Site"><header class="Site-header "><div class="Header"><div class="Header-title"></div></div></header><div class="Site-content Site-Content--markdown"><div class="Container"><div class="doc"><h1><a class="h" name="2_27-Defining-entity-relations" href="#2_27-Defining-entity-relations"><span></span></a><a class="h" name="2_27-defining-entity-relations" href="#2_27-defining-entity-relations"><span></span></a>2.27 Defining entity relations</h1><h2><a class="h" name="Anatomical-body-structure-Medical-device" href="#Anatomical-body-structure-Medical-device"><span></span></a><a class="h" name="anatomical-body-structure-medical-device" href="#anatomical-body-structure-medical-device"><span></span></a>Anatomical body structure &lt;&gt; Medical device</h2><p>This relationship provides information about the medical devices related to anatomical structure. For example: “The patient has an RCA stent in place.” Here, “RCA” is an anatomical structure and “stent” is a medical device. Adding a relationship between anatomy and a medical device helps us to retain the context of the sentence.</p><h2><a class="h" name="Medical-condition-Medical-device" href="#Medical-condition-Medical-device"><span></span></a><a class="h" name="medical-condition-medical-device" href="#medical-condition-medical-device"><span></span></a>Medical condition &lt;&gt; Medical device</h2><p>This relationship is specifically for a medical condition and the device used to address that condition. For example: “The patient has a fracture and hence a splint was placed.” “Splint” should be annotated as a medical device and should be assigned a relationship with the medical condition.</p><p><strong>Note</strong>: If any device occurs alongside multiple entity types, then we should assign multiple relationships.</p><p>For example: “The patient has a right hand splint for his fracture.” Here, “splint” - medical device - should be related with “fracture” and anatomical structure.</p><h2><a class="h" name="Medical-condition-Medication" href="#Medical-condition-Medication"><span></span></a><a class="h" name="medical-condition-medication" href="#medical-condition-medication"><span></span></a>Medical condition &lt;&gt; Medication</h2><p>Generally, medications present in the document have some reference or relationship with the medical condition. There are exceptions, as there are times when a list of medications are documented in reference to the chronic conditions of the patient which may or may not be documented in the record.</p><p>For example: “The patient is on insulin for his diabetes.” In this case, “insulin” is a medication used to treat diabetes and, so both these entity types should be related.</p><h2><a class="h" name="Medical-condition-Procedure" href="#Medical-condition-Procedure"><span></span></a><a class="h" name="medical-condition-procedure" href="#medical-condition-procedure"><span></span></a>Medical condition &lt;&gt; Procedure</h2><p>When a procedure is performed to treat a specific condition, then this relationship should be used. Imaging performed to detect a specific problem should also be considered.</p><p>For example: “The patient undergoes CPAP therapy for his sleep apnea.”</p><p>Here, “CPAP therapy” is used for “his sleep apnea”. By assigning a relationship between procedure and problem, we can extract the context of the sentence.</p><h2><a class="h" name="Anatomical-body-structure-Medical-condition" href="#Anatomical-body-structure-Medical-condition"><span></span></a><a class="h" name="anatomical-body-structure-medical-condition" href="#anatomical-body-structure-medical-condition"><span></span></a>Anatomical body structure &lt;&gt; Medical condition</h2><p>Assign this relationship when a medical condition is mentioned as being related to a specific anatomical body region.When a medical condition is mentioned as being related to a specific anatomical body region, then this relationship should be assigned.</p><p>For example: “The patient has pain in her hand.” Here, “pain” is present in the patient’s hand and hence “pain” and “hand” should be labeled as related.</p><h2><a class="h" name="Anatomical-body-structure-Medical-procedure" href="#Anatomical-body-structure-Medical-procedure"><span></span></a><a class="h" name="anatomical-body-structure-medical-procedure" href="#anatomical-body-structure-medical-procedure"><span></span></a>Anatomical body structure &lt;&gt; Medical procedure</h2><p>This type of relationship should be assigned when a specific procedure is carried out in an anatomical structure.</p><p>For example: “The resection of the gallbladder took place.” “resection” (medical procedure) of the anatomy part “gallbladder” (anatomical body structure) is documented in the medical record. By labeling the relationship between Medical procedure and Anatomical body structure, we can extract a deeper level of information regarding the patient’s treatment plan.</p></div></div></div><!-- default customFooter --><footer class="Site-footer"><div class="Footer"><span class="Footer-poweredBy">Powered by <a href="https://gerrit.googlesource.com/gitiles/">Gitiles</a>| <a href="https://policies.google.com/privacy">Privacy</a></span><div class="Footer-links"></div></div></footer></body></html>
+# 2.27 Defining entity relations
+
+## Anatomical body structure <> Medical device
+
+This relationship provides information about the medical devices related to anatomical structure.
+For example: “The patient has an RCA stent in place.”
+Here, “RCA” is an anatomical structure and “stent” is a medical device. Adding a relationship between anatomy and a medical device helps us to retain the context of the sentence.
+
+## Medical condition <> Medical device
+
+This relationship is specifically for a medical condition and the device used to address that condition.
+For example: “The patient has a fracture and hence a splint was placed.” “Splint” should be annotated as a medical device and should be assigned a relationship with the medical condition.
+
+**Note**: If any device occurs alongside multiple entity types, then we should assign multiple relationships.
+
+For example: “The patient has a right hand splint for his fracture.”
+Here, “splint” - medical device - should be related with “fracture” and anatomical structure.
+
+## Medical condition <> Medication
+
+Generally, medications present in the document have some reference or relationship with the medical condition. There are exceptions, as there are times when a list of medications are documented in reference to the chronic conditions of the patient which may or may not be documented in the record.
+
+For example: “The patient is on insulin for his diabetes.”
+In this case, “insulin” is a medication used to treat diabetes and, so both these entity types should be related.
+
+## Medical condition <> Procedure
+
+When a procedure is performed to treat a specific condition, then this relationship should be used. Imaging performed to detect a specific problem should also be considered.
+
+For example: “The patient undergoes CPAP therapy for his sleep apnea.”
+
+Here, “CPAP therapy” is used for “his sleep apnea”. By assigning a relationship between procedure and problem, we can extract the context of the sentence.
+
+## Anatomical body structure <> Medical condition
+
+Assign this relationship when a medical condition is mentioned as being related to a specific anatomical body region.When a medical condition is mentioned as being related to a specific anatomical body region, then this relationship should be assigned.
+
+For example: “The patient has pain in her hand.”
+Here, “pain” is present in the patient’s hand and hence “pain” and “hand” should be labeled as related.
+
+## Anatomical body structure <> Medical procedure
+
+This type of relationship should be assigned when a specific procedure is carried out in an anatomical structure.
+
+For example: “The resection of the gallbladder took place.”
+“resection” (medical procedure) of the anatomy part “gallbladder” (anatomical body structure) is documented in the medical record. By labeling the relationship between Medical procedure and Anatomical body structure, we can extract a deeper level of information regarding the patient’s treatment plan.

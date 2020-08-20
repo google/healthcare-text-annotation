@@ -1,1 +1,17 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>2.26 Defining entity subject</title><link rel="stylesheet" type="text/css" href="/+static/base.FgwOs7Bvh5E6-lzR-xJuUQ.cache.css"/><link rel="stylesheet" type="text/css" href="/+static/doc.aizEIcp0qpW8JIXIrCB9UQ.cache.css"/><link rel="stylesheet" type="text/css" href="/+static/prettify/prettify.AOMOBqJIPcDq491E2ExAAw.cache.css"/><!-- default customHeadTagPart --></head><body class="Site"><header class="Site-header "><div class="Header"><div class="Header-title"></div></div></header><div class="Site-content Site-Content--markdown"><div class="Container"><div class="doc"><h1><a class="h" name="2_26-Defining-entity-subject" href="#2_26-Defining-entity-subject"><span></span></a><a class="h" name="2_26-defining-entity-subject" href="#2_26-defining-entity-subject"><span></span></a>2.26 Defining entity subject</h1><h2><a class="h" name="Patient" href="#Patient"><span></span></a><a class="h" name="patient" href="#patient"><span></span></a>Patient</h2><p>This label provides information that the concept is related to the patient. For example: “The patient has hypertension”. In this sentence, the “patient” becomes the subject, and the information can be perceived that hypertension is associated with the patient.</p><h2><a class="h" name="Family-member" href="#Family-member"><span></span></a><a class="h" name="family-member" href="#family-member"><span></span></a>Family member</h2><p>This label provides information that the concept is related to the family members of the patient. For example: “The patient’s mother has diabetes”. In this sentence, “mother” becomes the family member and it can be said that diabetes is associated with the patient’s mother.</p><h2><a class="h" name="Other" href="#Other"><span></span></a><a class="h" name="other" href="#other"><span></span></a>Other</h2><p>This label provides information that the entity is related to any other individual except for the family members of the patient or the patient itself. For example: “The patient’s friend has myocardial infarction”. In this case, “friend” is annotated as “Other” and it can be inferred that myocardial infarction is associated with the friend.</p></div></div></div><!-- default customFooter --><footer class="Site-footer"><div class="Footer"><span class="Footer-poweredBy">Powered by <a href="https://gerrit.googlesource.com/gitiles/">Gitiles</a>| <a href="https://policies.google.com/privacy">Privacy</a></span><div class="Footer-links"></div></div></footer></body></html>
+# 2.26 Defining entity subject
+
+## Patient
+
+This label provides information that the concept is related to the patient.
+For example: “The patient has hypertension”. In this sentence, the “patient” becomes the subject, and the information can be perceived that hypertension is associated with the patient.
+
+## Family member
+
+This label provides information that the concept is related to the family members of the patient.
+For example: “The patient’s mother has diabetes”. In this sentence, “mother” becomes the family member and it can be said that diabetes is associated with the patient’s mother.
+
+## Other
+
+This label provides information that the entity is related to any other individual except for the family members of the patient or the patient itself.
+For example: “The patient’s friend has myocardial infarction”. In this case, “friend” is annotated as “Other” and it can be inferred that myocardial infarction is associated with the friend.
+
