@@ -7,8 +7,13 @@ Medical annotations capture a structured representation of knowledge stored in u
 
 
 [Defining Entity Categories](defining-entity-categories.md)
+
 [Defining Entity Temporal Assessment](defining-entity-temporal-assessment.md)
+
 [Defining Entity Certainty Assessment](defining-entity-certainty-assessment.md)
+
 [Defining Entity Subject](defining-entity-subject.md)
+
 [Rules for Annotating Temporal Assessment, Certainty Assessment, Subject](annotating-rules.md)
+
 [Defining Entity Relations](defining-entity-relations.md)
