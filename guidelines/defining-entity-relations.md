@@ -1,4 +1,4 @@
-# 2.27 Defining entity relations
+# Defining entity relations
 
 ## Anatomical body structure <> Medical device
 

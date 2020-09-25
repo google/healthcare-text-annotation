@@ -1,4 +1,4 @@
-# 2.2 Defining entity categories
+# Defining entity categories
 
 In this section, we define the medical categories within the scope of these annotation guidelines. Because of the inherent ambiguous nature of language, we need to prepare guidelines for outlining which terms belong in each medical category. The definitions provided herein are an attempt to clarify what is being annotated and how ambiguous scenarios should be handled.
 
@@ -32,7 +32,7 @@ General function carried out by the human body.
   d. “postmenopausal”
   e. “psych”
 
-### 2.2.2.1  Body function modifier
+###  Body function modifier
 
 The status or result of any body function should be annotated as a body function modifier. For example, body function modifiers include words like “increased”, “decreased”, “positive”, or “negative”.
 
@@ -52,7 +52,7 @@ A normal measurement of the body that is obtained without performing a complex p
   a. **For example**: “Blood pressure is normal.”
     i. In this case, even though there is no value mentioned with “blood pressure”, we should annotate “blood pressure” as a body measurement.
 
-### 2.2.1 Modifier: Result
+### Modifier: Result
 
 #### Definition
 
@@ -63,7 +63,7 @@ The result of any body measurement should be annotated as a measurement result. 
 * "BP is high."
   * “high” is the result of the body measurement “BP”.
 
-### 2.2.2 Modifier: Value
+### Modifier: Value
 
 #### Definition
 
@@ -76,7 +76,7 @@ Values of body measurement fall under this category. Such a value cannot stand a
   b. “110/70” is the value of body measurement “BP”
   c. “97.4” is the value of body measurement “Temp"
 
-### 2.2.3 Modifier: Unit
+### Modifier: Unit
 
 #### Definition
 
@@ -103,7 +103,7 @@ A medical procedure that involves testing a sample of blood, urine, or other sub
 1. “White blood cell 3.0, haemoglobin 13.9, and lymphocytes 48.”
   a. “white blood cell”, “haemoglobin”, and “lymphocytes” are the elements that are being analyzed using certain procedures and tests. “White blood cells” represent body substances, but since it has a value assigned, it falls under the category of laboratory data.
 
-### 2.2.x.1 Modifier: Lab value
+### Modifier: Lab value
 
 #### Definition
 
@@ -114,7 +114,7 @@ The value of laboratory data. This annotation cannot stand alone and has to be r
 1. “White blood cell 3.0, haemoglobin 13.9, and lymphocytes 48”
   a. “3.0” is the value of the lab data “white blood cell”.
 
-### 2.2.x.2 Modifier: Lab unit
+### Modifier: Lab unit
 
 #### Definition
 
@@ -125,7 +125,7 @@ The unit of measurement for the laboratory value.  This value cannot stand alone
 1. “White blood cell 3.0, haemoglobin 13.9 g/dl, and lymphocytes 48”
   a. “g/dl” is the unit of the laboratory value.
 
-### 2.2.x.3 Modifier: Lab result
+### Modifier: Lab result
 
 #### Definition
 
@@ -202,7 +202,7 @@ A condition that alters or interferes with a normal process, state, or activity 
   a. For example: “Interval cervical changes.” This is a sign/symptom of labor. Labor is a medical condition and we need to annotate the signs leading to this event.
 17. Terms like “contractions” refer to the body function and hence, regardless of the severity, these terms should not be annotated as medical conditions.
 
-### 2.15.x.1 Modifier: Severity
+### Modifier: Severity
 
 #### Definition
 
@@ -272,7 +272,7 @@ Any diagnostic procedure, examination, surgery, or any treatment procedure that 
   a. For example: “Left leg x-ray was normal.” In this case, only “x-ray” should be annotated as a medical procedure.
 11. If a medical procedure is mentioned in a form, then we will consider such mentions as medical procedures even though they are not part of the running text.
 
-### 2.15.x.1 Modifier: Method
+### Modifier: Method
 
 #### Definition
 
@@ -283,7 +283,7 @@ Any mention of the method in which a procedure is conducted.
 1. “X-ray was performed with IV contrast.”
   a. “IV contrast” is a method used for the “X-ray” procedure.
 
-### 2.15.x.2 Modifier: Result
+### Modifier: Result
 
 #### Definition
 
@@ -324,7 +324,7 @@ A drug or other preparation for the treatment or prevention of disease. Any bloo
   a. medication: “aspirin”, status: “current”, certainty assessment: “likely”
   b. medication: “antibiotics”, temporal assessment: “upcoming”, certainty assessment: “somewhat unlikely”
 
-### 2.15.x.1 Modifier: Strength
+### Modifier: Strength
 
 #### Definition
 
@@ -335,7 +335,7 @@ The strength of the drug indicates the amount of active ingredient in each dosag
 1. "The patient takes Aspirin 50 mg 2 tablets orally every day".
   a. “50” is the strength of the medication “Aspirin”.
 
-### 2.15.x.2 Modifier: Unit
+### Modifier: Unit
 
 #### Definition
 
@@ -346,7 +346,7 @@ Strengths are usually quantified in units of measurements.
 1. "The patient takes Aspirin 50 mg 2 tablets orally every day".
   a. “mg” is the unit of measurement for the medication strength.
 
-### 2.15.x.3 Modifier: Dose
+### Modifier: Dose
 
 #### Definition
 
@@ -357,7 +357,7 @@ A dose of a medicine or a drug is a measured amount of it that is intended to be
 1. "The patient takes Aspirin 50 mg 2 tablets orally every day"
   a. “2” is the dose of the medication.
 
-### 2.15.x.4 Modifier: Form
+### Modifier: Form
 
 #### Definition
 
@@ -368,7 +368,7 @@ Form of medication indicates physical characteristics of the specific drug.
 1. "The patient takes Aspirin 50 mg 2 tablets orally every day".
   a. “tablets” is the form of the medication.
 
-### 2.15.x.5 Modifier: Frequency
+### Modifier: Frequency
 
 #### Definition
 
@@ -379,7 +379,7 @@ The frequency of a drug refers to how often it is taken.
 1. "The patient takes Aspirin 50 mg 2 tablets orally every day".
   a. “every day” is the frequency of the medication administration.
 
-### 2.15.x.6 Modifier: Route
+### Modifier: Route
 
 #### Definition
 
@@ -390,7 +390,7 @@ A route of administration is the path by which the drug is taken into the body. 
 1. "The patient takes Aspirin 50 mg 2 tablets orally every day".
   a. “orally” is the route of the drug.
 
-### 2.15.x.7 Modifier: Duration
+### Modifier: Duration
 
 #### Definition
 
@@ -401,7 +401,7 @@ The time until which the patient has to take the medication is known as duration
 1. "The patient should take Aspirin 50 mg 2 tablets orally every day for 2 months". 
   a. “for 2 months” is the duration during which the patient has to take the medication.
 
-### 2.15.x.8 Modifier:   Status
+### Modifier:   Status
 
 #### Definition
 
@@ -452,7 +452,7 @@ This entity type describes the abuse caused by a psychoactive substance that aff
 
 The annotation of status is dependent on the keyword present in the document. There are times when the document is missing such information. In such cases, the annotator must not annotate the status. Do not confuse this scenario with an unclear entity type. “Unclear” should be only used when it is documented.
 
-### 2.23.x.1 Living status
+### Living status
 
 This category describes the living condition of the patient. There are multiple possibilities and hence this category has 4 subtypes that cover all possibilities.
 * Living status:
@@ -465,7 +465,7 @@ In case of living status, the entity that represents the living status will be a
 * For example: “Patient lives with family.” In this case, “family” will be assigned the tag “Family”.
 * For example: “Patient lives with friends.” In this case, “friends” will be assigned the tag “Other”.
 
-### 2.23.x.2 Follow-up status
+### Follow-up status
 
 This category describes the follow-up status of the patient. “Unclear” should be annotated when it is documented and is not to be confused with no related documentation.
 
@@ -474,7 +474,7 @@ Followup status:
 * Does not follow up
 * Unclear - Follow up
 
-### 2.23.x.3 Compliance status
+### Compliance status
 
 This category describes the compliance status of the patient. There are times when the patient is not compliant due to a specific reason, and such reasons should be also annotated as the reason for non-compliance.
 
@@ -485,7 +485,7 @@ Compliance:
 
 Words or phrases like “not taking his/her medication” depicts non-compliance, and so “not taking his/her medications” will be annotated as non -compliant.
 
-### 2.23.x.4 Monitoring status
+### Monitoring status
 
 This category describes monitoring status of the patient.
 

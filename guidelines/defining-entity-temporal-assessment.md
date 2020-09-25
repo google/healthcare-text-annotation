@@ -1,4 +1,4 @@
-# 2.24 Defining entity temporal assessment
+# Defining entity temporal assessment
 
 ## Current
 

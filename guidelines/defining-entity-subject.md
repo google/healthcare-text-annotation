@@ -1,4 +1,4 @@
-# 2.26 Defining entity subject
+# Defining entity subject
 
 ## Patient
 

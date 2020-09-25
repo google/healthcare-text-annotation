@@ -1,4 +1,4 @@
-# 2.25 Defining entity certainty assessment
+# Defining entity certainty assessment
 
 ## Likely
 
